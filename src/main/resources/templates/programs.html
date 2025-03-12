@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Our Programs</title>
+	<link rel="stylesheet" th:href="@{/css/styles.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/programs.css}">
+</head>
+<body>
+    <!-- Navbar Fragment -->
+    <div th:insert="~{fragments/navbar}"></div>
+
+    <h1>Our Programs</h1>
+
+    <section>
+        <h2>Coding on Wheels</h2>
+		<a href="/about">
+		        <img src="https://media.istockphoto.com/id/1133385963/photo/teamwork-of-the-staff.jpg?s=2048x2048&w=is&k=20&c=owDa5NB6P9TdtmxHENQnIJuKu9ECLMAJsMUCdO8rElY=" alt="Coding on Wheels" style="width:100%; height:auto; border-radius:10px;">
+		</a>
+        <p>
+            The <b>"Coding on Wheels"</b> project is a transformative initiative of Global Technopower Foundation (GTPF) dedicated to empowering the most vulnerable and often overlooked members of our society: destitute students in orphanages. These children face unique challenges, and our project is committed to bridging the digital divide for them.
+        </p>
+        <p>
+            With a mobile learning unit equipped with cutting-edge technology and expert instructors, we bring the world of coding and computer science directly to the doorsteps of orphanages. Through interactive coding lessons, workshops, and engaging activities, we introduce these students to the exciting world of technology, opening doors to a brighter future.
+        </p>
+    </section>
+
+    <section>
+        <h2>Coding Education in Government Schools</h2>
+		<a href="/contact">
+		       <img src="https://media.istockphoto.com/id/2057748009/photo/happy-little-kids-surfing-the-internet-on-a-computer.jpg?s=2048x2048&w=is&k=20&c=ZgiZVq5z8KBvEBxoQPScP6MidN9fQnxSgema_7zGq1w=" alt="Women Empowerment" style="width:100%; height:auto; border-radius:10px;">
+		 </a>
+        <p>
+            We are bringing the gift of coding education to the most deserving students—those in grades 8 to 10, coming from marginalized backgrounds and attending under-resourced government schools.
+        </p>
+        <p>
+            Our mission is clear—to bridge the educational gap and empower these young minds with the digital skills they need to thrive in the 21st century. For students who lack basic resources and quality education, our program is a game-changer. It's a gateway to a world of innovation and opportunity.
+        </p>
+        <p>
+            Join us in equipping these resilient students with the tools they need to break free from the cycle of marginalization and disadvantage. Together, we are empowering the next generation with the tools to succeed and shape a brighter tomorrow.
+        </p>
+    </section>
+
+    <section>
+        <h2>Women Empowerment</h2>
+		<img src="https://media.istockphoto.com/id/1163294201/photo/smiling-confident-businesswoman-posing-with-arms-folded.webp?a=1&b=1&s=612x612&w=0&k=20&c=dDmDW8ubpXHeS_yyE5OHEl8PBt9UQO7tRa41dBEV9V0="  alt="Coding on Wheels" style="width:100%; height:auto; border-radius:10px;">
+        <p>
+            We are championing a transformative mission to empower women and girls to reclaim their lives from the clutches of monthly discomfort and pain. Our intervention is simple yet profound — providing access to <b>Mihir organic rice</b>, a natural remedy with the potential to alleviate menstrual agony.
+        </p>
+        <p>
+            Beyond mere distribution, we are igniting a movement. We conduct awareness programs, nurturing health and hygiene education, and equipping women and girls with the knowledge to manage their menstrual health confidently.
+        </p>
+    </section>
+
+    <!-- Footer Fragment -->
+	 <div th:insert="~{fragments/footer}"></div>
+	</body>
+</body>
+</html>

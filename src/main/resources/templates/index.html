@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>EducationForAll - Home</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+	
+    <div th:replace="~{fragments/navbar}"></div>
+	
+    <section class="hero">
+		<h1>Welcome to Glob TechPower Foundation</h1>
+		<img src="https://media.istockphoto.com/id/1395727646/photo/handheld-shot-of-village-school-girl-kids-seriously-busy-working-on-laptop-concept-of.jpg?s=612x612&w=0&k=20&c=pG8-ufKlQhQ9W911WguiKD0GVSuSwKKP-D5hGdR2MAI=">
+        <p>Join us in our mission to provide free education and coding skills to underprivileged girls.</p>
+		
+        <a th:href="@{/donate}" class="btn btn-primary">Donate Now</a>
+    </section>
+    <section class="about">
+        <h2>Why Education Matters?</h2>
+        <p>Millions of girls worldwide lack access to education. Our NGO aims to bridge this gap through quality learning and technology skills.</p>
+    </section>
+
+    <div th:replace="~{fragments/footer}"></div>
+
+</body>
+</html>

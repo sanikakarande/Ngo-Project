@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO Website</title>
+   
+    <script src="dropdown.js" defer></script>
+</head>
+<body>
+	<div class="headline">
+				        🌍 Glob TechPower Foundation
+				</div>	
+
+    <nav class="navbar">
+		
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="/about">About Us ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Who We Are?</a></li>
+                    <li><a href="#">Vision</a></li>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">Our Values</a></li>
+                    <li><a href="#">Our Approach</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="/programs">Our Programs ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Coding on Wheels</a></li>
+                    <li><a href="#">Coding Education in Schools</a></li>
+                    <li><a href="#">Women Empowerment</a></li>
+                    <li><a href="#">Livelihoods</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="/campaign">Campaign ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Padho Bhi</a></li>
+                    <li><a href="#">Padhaon Bhi</a></li>
+                    <li><a href="#">Corporate Training</a></li>
+                    <li><a href="#">Training for Social Cause</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="/resources">Resources ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Annual Reports</a></li>
+                    <li><a href="#">Publications</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Get Involved ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Support from Individuals</a></li>
+                    <li><a href="#">Payroll Giving</a></li>
+                    <li><a href="#">Sponsorships</a></li>
+                    <li><a href="#">Volunteer & Internship</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="donate.html" class="donate-btn">Donate</a></li>
+			<li><a href="/admin/login" th:href="@{/admin/admin_login}">Admin</a></li>
+        </ul>
+		
+
+		<script th:src="@{/js/dropdown.js}"></script>
+        <!-- Hamburger Menu -->
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
+    </nav>
+
+</body>
+</html>

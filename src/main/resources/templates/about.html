@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/about.css}">
+	<link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+    <div th:insert="~{fragments/navbar}"></div>
+
+    <h1>About Glob TechPower Foundation</h1>
+
+    <section>
+        <h2>Who We Are?</h2>
+        <p>
+            Glob TechPower Foundation (GTPF) is a non-profit organisation driven by a shared vision. A vision that arose out of diverse backgrounds and experiences of professionals who came together with a common goal to use technology and digital innovation for positive and constructive educational, social as well as community impact. We believe in the potential of
+            technology and its ability to transform lives and uplift communities from underserved and marginalized backgrounds. This united commitment sparked the birth of Global Technopower Foundation (GTPF).
+        </p>
+
+        <h2>Our Vision</h2>
+        <p>
+            We believe that no one should be left behind in the digital era; thus, we envisage a society in which underserved communities are empowered, educated, and economically self-sufficient, breaking the cycle of poverty and inequalities.
+        </p>
+
+        <h2>Our Mission</h2>
+        <p>To bring our vision to reality, we have established the following mission that informs all of our actions:</p>
+        <p><b>“Empowering Communities Through Innovations and Technology”</b></p>
+
+        <h2>Our Values</h2>
+        <ul>
+            <li><b>Inclusivity:</b> Diversity and inclusivity are values we uphold in all facets of our work. We ensure that all community members, regardless of gender and socioeconomic background, have equal access to opportunities and resources.</li>
+            <li><b>Empowerment:</b> We strive to empower individuals and communities belonging to underserved and marginalized backgrounds to take control of their own purposes by providing them with the necessary tools, knowledge, and resources they need to thrive in the digital age.</li>
+            <li><b>Adaptability:</b> We are flexible and responsive to the evolving needs and challenges of the community, adjusting strategies as necessary.</li>
+            <li><b>Collaboration:</b> We believe that collaboration and working together is the foremost value. Thus, we collaborate with partners, corporates, governments, volunteers, and communities to achieve shared goals.</li>
+            <li><b>Ethical Conduct:</b> We uphold the highest ethical standards in all interactions and operations, ensuring the welfare of the community remains paramount.</li>
+        </ul>
+    </section>
+	<section>
+	    <h2 th:text="${about.title}">About Our NGO</h2>
+	    <p th:text="${about.description}">Default content here...</p>
+	</section>
+
+    <div th:insert="~{fragments/footer}"></div>
+</body>
+</html>

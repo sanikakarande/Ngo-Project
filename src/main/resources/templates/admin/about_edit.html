@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Edit About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f8f8;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 15px 0 5px;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .success-message {
+            text-align: center;
+            color: green;
+            margin-top: 20px;
+        }
+
+        .nav-back {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .nav-back a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .nav-back a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Edit About Us Section</h2>
+
+    <form th:action="@{/admin/update-about}" th:object="${about}" method="post">
+        <label for="title">Title:</label>
+        <input type="text" th:field="*{title}" id="title" placeholder="Enter title" />
+
+        <label for="description">Description:</label>
+        <textarea th:field="*{description}" id="description" rows="8" placeholder="Enter description"></textarea>
+
+        <button type="submit">Save Changes</button>
+    </form>
+
+    <!-- Success Message -->
+    <div th:if="${param.success}" class="success-message">
+        <p>About Us updated successfully!</p>
+    </div>
+
+    <!-- Back to Dashboard -->
+    <div class="nav-back">
+        <a th:href="@{/admin/dashboard}">&larr; Back to Dashboard</a>
+    </div>
+
+</body>
+</html>
